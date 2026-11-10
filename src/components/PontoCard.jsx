@@ -4,7 +4,7 @@ import Botao from './Botao.jsx';
 export default function PontoCard({ ponto, aoEditar, aoExcluir }) {
   const tipo = buscarTipo(ponto.tipo);
   return (
-    <article className="rounded-xl border border-linha bg-papel p-4 shadow-sm">
+    <article className="rounded-xl border border-linha bg-papel p-5 shadow-sm transition-shadow duration-300 hover:shadow-md">
       <div className="flex flex-wrap items-center gap-2">
         <span className={`rounded-md px-2 py-1 text-sm font-bold ${tipo.classe}`}>{tipo.rotulo}</span>
         {/* O estado usa texto e símbolo, não só cor */}
@@ -12,7 +12,7 @@ export default function PontoCard({ ponto, aoEditar, aoExcluir }) {
           {ponto.aberto ? '● Aberto agora' : '○ Fechado'}
         </span>
       </div>
-      <h3 className="mt-2 text-xl font-bold">{ponto.nome}</h3>
+      <h3 className="mt-3 text-xl font-bold">{ponto.nome}</h3>
       <p className="text-suave">{ponto.endereco} · {ponto.bairro}</p>
       {ponto.horario && <p className="mt-1">Horário: {ponto.horario}</p>}
       {ponto.observacoes && <p className="mt-1">{ponto.observacoes}</p>}

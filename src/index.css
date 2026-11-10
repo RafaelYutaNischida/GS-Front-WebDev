@@ -1,20 +1,24 @@
 @import "tailwindcss";
 
-/* Paleta pensada para leitura ao sol: alto contraste e cores com função.
-   sombra = verde-azulado (frescor) | agua = azul | calor = laranja queimado (alerta) */
 @theme {
-  --font-sans: "Atkinson Hyperlegible", system-ui, sans-serif;
-  --color-fundo: #eef4f3;
+  --font-sans: "Atkinson Hyperlegible", sans-serif;
+  --font-serif: "Lora", Georgia, serif;
+  --color-fundo: #f4f1ea;
+  --color-fundo-escuro: #141414;
   --color-papel: #ffffff;
-  --color-tinta: #0f2a2e;
-  --color-suave: #4a6468;
-  --color-linha: #c5d6d4;
-  --color-sombra: #0f6b63;
-  --color-agua: #1b64a0;
-  --color-calor: #b93a0b;
+  --color-tinta: #141414;
+  --color-marinho: #1b3f5e;
+  --color-terracota: #cf6d4e;
+  --color-suave: #4b5358;
+  --color-linha: #d6d0c6;
+  --color-sombra: #1b3f5e;
+  --color-agua: #2d617c;
+  --color-calor: #9b3d25;
 }
 
 body {
+  min-width: 320px;
+  margin: 0;
   background: var(--color-fundo);
   color: var(--color-tinta);
   font-family: var(--font-sans);
@@ -22,7 +26,27 @@ body {
   line-height: 1.5;
 }
 
+h1,
+h2,
+h3 {
+  color: var(--color-marinho);
+  font-family: var(--font-serif);
+  line-height: 1.2;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+input:not([type="checkbox"]):not([type="range"]):focus-visible,
+select:focus-visible {
+  border-color: var(--color-marinho);
+  box-shadow: 0 0 0 3px rgb(27 63 94 / 18%);
+}
+
 :focus-visible {
-  outline: 3px solid var(--color-agua);
+  outline: 3px solid var(--color-marinho);
   outline-offset: 2px;
 }

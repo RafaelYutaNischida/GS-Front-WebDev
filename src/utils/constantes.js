@@ -1,7 +1,7 @@
 // Tipos de ponto de apoio. As classes ficam escritas por extenso
 // para o Tailwind conseguir enxergá-las.
 export const TIPOS = [
-  { valor: 'sombra', rotulo: 'Sombra', classe: 'bg-sombra text-white' },
+  { valor: 'sombra', rotulo: 'Sombra', classe: 'bg-marinho text-white' },
   { valor: 'agua', rotulo: 'Água', classe: 'bg-agua text-white' },
   { valor: 'descanso', rotulo: 'Descanso', classe: 'bg-tinta text-white' },
 ];
