@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* Paleta pensada para leitura ao sol: alto contraste e cores com função.
+   sombra = verde-azulado (frescor) | agua = azul | calor = laranja queimado (alerta) */
+@theme {
+  --font-sans: "Atkinson Hyperlegible", system-ui, sans-serif;
+  --color-fundo: #eef4f3;
+  --color-papel: #ffffff;
+  --color-tinta: #0f2a2e;
+  --color-suave: #4a6468;
+  --color-linha: #c5d6d4;
+  --color-sombra: #0f6b63;
+  --color-agua: #1b64a0;
+  --color-calor: #b93a0b;
+}
+
+body {
+  background: var(--color-fundo);
+  color: var(--color-tinta);
+  font-family: var(--font-sans);
+  font-size: 1.0625rem;
+  line-height: 1.5;
+}
+
+:focus-visible {
+  outline: 3px solid var(--color-agua);
+  outline-offset: 2px;
+}
