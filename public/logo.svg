@@ -1,11 +1,11 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 200" role="img" aria-labelledby="title description">
   <title id="title">Pontos de Apoio</title>
-  <desc id="description">Um arco terracota sobre duas ondas azul-marinho.</desc>
+  <desc id="description">Um arco terracota sobre duas ondas claras.</desc>
   <g fill="none" stroke-linecap="round" stroke-linejoin="round">
     <path d="M34 118a67 67 0 0 1 134 0Z" fill="#c66a4a" stroke="#c66a4a" stroke-width="2" />
-    <path d="M25 139c18-12 36-12 54 0s36 12 54 0 36-12 54 0" stroke="#17324d" stroke-width="9" />
-    <path d="M34 163c16-10 32-10 48 0s32 10 48 0 32-10 48 0" stroke="#17324d" stroke-width="9" />
+    <path d="M25 139c18-12 36-12 54 0s36 12 54 0 36-12 54 0" stroke="#ffffff" stroke-width="9" />
+    <path d="M34 163c16-10 32-10 48 0s32 10 48 0 32-10 48 0" stroke="#ffffff" stroke-width="9" />
   </g>
-  <text x="228" y="105" fill="#17324d" font-family="Georgia, 'Times New Roman', serif" font-size="42">Pontos de Apoio</text>
+  <text x="228" y="105" fill="#ffffff" font-family="Georgia, 'Times New Roman', serif" font-size="42">Pontos de Apoio</text>
   <text x="231" y="143" fill="#c66a4a" font-family="Georgia, 'Times New Roman', serif" font-size="16" letter-spacing="1.5">SOMBRA · ÁGUA · DESCANSO</text>
 </svg>
