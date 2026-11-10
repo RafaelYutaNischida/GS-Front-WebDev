@@ -6,8 +6,19 @@ export const TIPOS = [
   { valor: 'descanso', rotulo: 'Descanso', classe: 'bg-tinta text-white' },
 ];
 
+export function normalizarTipo(valor) {
+  const chave = String(valor ?? '')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .trim()
+    .toLowerCase();
+  return TIPOS.find((tipo) => tipo.valor === chave)?.valor ?? valor;
+}
+
 export function buscarTipo(valor) {
-  return TIPOS.find((t) => t.valor === valor) ?? { valor, rotulo: valor, classe: 'bg-suave text-white' };
+  const tipoNormalizado = normalizarTipo(valor);
+  return TIPOS.find((tipo) => tipo.valor === tipoNormalizado)
+    ?? { valor, rotulo: valor, classe: 'bg-suave text-white' };
 }
 
 export const FORM_VAZIO = {
