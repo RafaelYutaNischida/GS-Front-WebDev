@@ -96,7 +96,7 @@ Depois de copiar o `.env.example`, edite o `.env` e coloque a URL da sua API. Ab
 ### Variável de ambiente
 
 ```
-VITE_API_URL=https://SEU_ID.mockapi.io/api/v1
+VITE_API_URL=https://6af2400542c6561ced3924ba.mockapi.io/api/v1
 ```
 
 A URL termina em `/v1`, **sem** `/pontos` (o código acrescenta isso). Depois de editar o `.env`, reinicie o `npm run dev`. No deploy (Vercel ou Netlify), cadastre essa mesma variável no painel do serviço.
@@ -113,7 +113,7 @@ O projeto não usa dados pessoais reais. Os pontos cadastrados são **dados simu
 
 ## Deploy
 
-**Link do site publicado (Vercel):** *(colar aqui o link da Vercel)*
+**Link do site publicado (Vercel):** https://gs-front-web-dev-six.vercel.app
 
 Como publicar:
 
