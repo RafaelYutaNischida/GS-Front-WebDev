@@ -13,7 +13,7 @@ Aplicação web que ajuda trabalhadores de rua e idosos a encontrar bebedouros, 
 | **Como funciona** | A pessoa informa a temperatura, recebe o nível de risco e consulta, filtra e gerencia uma lista de pontos de apoio (bebedouro, sombra e descanso) guardada numa API. |
 | **O que cada parte faz** | **Web/Front-end:** esta aplicação (interface e CRUD). **Python:** menu em terminal que registra temperaturas e pontos de apoio em JSON e classifica o risco de calor. **Sensor ESP32:** mede temperatura e umidade e responde com LED e buzzer, mesmo sem internet. **Matemática:** calcula a velocidade do aquecimento (derivada) e a exposição acumulada ao calor (integral). **Experiência:** requisitos, casos de uso, protótipo e roadmap. **Pitch:** vídeo de 3 minutos com a história do trabalhador de rua e a solução. |
 | **Link do repositório** | https://github.com/RafaelYutaNischida/GS-Front-WebDev |
-| **Link do deploy** | *(colar aqui o link da Vercel)* |
+| **Link do deploy** | https://gs-front-web-dev-six.vercel.app |
 | **Indicador de impacto** | Número de pontos de apoio (bebedouros, sombra e descanso) cadastrados e disponíveis na região |
 | **ODS conectados** | ODS 3 (Saúde e bem-estar), ODS 11 (Cidades e comunidades sustentáveis), ODS 13 (Ação contra a mudança global do clima) |
 
